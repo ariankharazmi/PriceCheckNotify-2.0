@@ -31,5 +31,5 @@ if(price < target_price):
                     .create(
                          body=f"{product} is now below {target_price} at {price}! \n \n {url}",
                          from_='+19785479096',
-                         to='+15133743630'
+                         to='+1---'
                      )
