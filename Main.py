@@ -1,3 +1,4 @@
+# Python Libraries
 from bs4 import BeautifulSoup as soup
 from urllib.request import Request, urlopen
 
@@ -19,10 +20,8 @@ product = html.find(id="productTitle").get_text().strip()
 # Get and convert price to float
 price = float((html.find("span", class_ = "a-offscreen").get_text()).replace('$', ''))
 
-# Twilio API
-account_sid = 'ACc566b540ea3b8f8ad5bc161def33b4df'
-auth_token = '2311913d7534328089006e99e50ce054'
-client = Client(account_sid, auth_token)
+
+
 
 # Set price threshold and phone number for sending SMS notification
 target_price = 650
