@@ -1,3 +1,3 @@
 # PriceCheckNotify-2.0
 
-Price Check (Shop Product) + Notify (Email)
+PriceCheckNotify2.0 will variate from the original.
