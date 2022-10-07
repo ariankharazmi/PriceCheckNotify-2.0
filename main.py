@@ -5,9 +5,9 @@ import streamlit as st
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'}
 
-st.title("Welcome to the PriceCheckNotify(2.0) application")
+st.title("Welcome to the PriceCheckNotify Web Application")
 
-st.subheader("An application to track prices on Amazon products")
+st.subheader("A web app to track prices on Amazon products")
 
 st.markdown("Built by Arian Kharazmi")
 
