@@ -1,13 +1,24 @@
 import requests
+import json
 from bs4 import BeautifulSoup as soup
 from urllib.request import Request, urlopen
 import streamlit as st
+import numpy as np
+import streamlit as st
+import base64
+import seaborn as sns
+import pandas as pd
+import time
+from pandas.io.json import json_normalize
+from datetime import date
+
+
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'}
 
-st.title("Welcome to the PriceCheckNotify Web Application")
+st.title("Welcome to the PriceCheckNotify Web Application (UC Prototype)")
 
-st.subheader("A web app to track prices on Amazon products")
+st.subheader("A (prototype) web app to track prices on Amazon products")
 
 st.markdown("Built by Arian Kharazmi")
 
@@ -52,6 +63,6 @@ else:
 
 st.write("Enter your price target")
 if(price < target_price):
-   st.write("Meets sale target!")
+   st.write("item price meets sale target!")
 else:
-    st.write("Does **not** meet sale target!")
+    st.write("item price does **not** meet sale target!")
